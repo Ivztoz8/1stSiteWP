@@ -1,0 +1,126 @@
+/*
+Theme Name: Simple Pro;
+Theme URI: https://miosito.com 
+Author: Ivan Toselli
+Author URI: https://miosito.com 
+Description: Our fantastic base theme
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License V2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domani: simplepro
+This theme, like wordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Reset HTML */
+body, html {
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,*:before, *:after{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{ margin: 0; padding: 0;}
+ul, ol{list-style-type: none;}
+img{height: auto;}
+
+
+/* ! Base */
+body{font-family: system-ui, "Helvetica Neue", Arial, sans-serif;}
+h1,h2,h3,h4,h5,h6,p{color: #333; margin-bottom: 20px;}
+h1{font-size: 60px; line-height: 1; font-weight: 800;}
+h2{font-size: 40px; line-height: 1.3; font-weight: 800;}
+h3{font-size: 30px; line-height: 1.3; font-weight: 800;}
+h4{font-size: 25px; line-height: 1.3; font-weight: 800;}
+h5{font-size: 20px; line-height: 1.3; font-weight: 800;}
+h6{font-size: 15px; line-height: 1.3; font-weight: 800;}
+
+.img-res{width: 100%; height: auto;}
+
+/* Helper's Classes*/
+.mb-1{margin-bottom: 20px;}
+.mb-2{margin-bottom: 40px;}
+
+
+@media(max-width: 768px) {
+    h1{font-size: 40px;}
+    h2{font-size: 30px;}
+    h3{font-size: 25px;}
+}
+
+a{text-decoration: none; color: #F75E47;}
+p{line-height: 1.5;}
+
+.single p{font-size: 18px; line-height: 1.7;}
+
+/* ! Layout */
+.header, .footer{padding: 10px;}
+.container, article{margin: 10px; padding: 10px ;}
+.container{max-width: 800px; margin: 0 auto;}
+
+.page .container{max-width: 1200px;}
+
+/* ! Header */
+.header{display: flex; justify-content: space-between; background: #fff; padding: 20px; border-radius: 10px; margin: 10px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);}
+
+.menu ul{margin-bottom: 0;}
+.menu li{display: inline-block;}
+.menu li a{padding: 10px; display: block; color: #000;}
+.menu li.evi a{background: #F75E47; color: #fff; text-transform: uppercase; font-weight: bold; border-radius: 4px; padding: 10px 20px;}
+
+.logo{display: inline-block; color: #000; font-weight: 800; font-size: 30px; text-transform: uppercase;}
+
+@media (max-width:768px) {
+    .logo{width: 100%; text-align: center;}
+    .header{display: block;}
+    .menu ul{overflow-x: auto; white-space: nowrap;}
+    
+}
+
+/* ! Hero */
+
+.hero{padding: 20px; text-align: center;}
+.hero h1{padding: 100px 10px;}
+
+.page .hero h1{padding: 150px 10px;}
+
+/* .single .hero{ display: none;} */
+
+
+/* ! Blocks */
+
+.panel-info{border: 1px solid red;}
+
+.panel-info .wp-block-media-text__media{
+    background: #0CF6E2;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.panel-info .wp-block-media-text__media img{
+    margin-bottom: -60px;
+    border-radius: 10px;
+}
+
+.post-img{
+    background: #0CF6E2;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.post-img img{
+    margin-bottom: -60px;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.footer{background: #eee; padding: 30px; text-align: center;}
